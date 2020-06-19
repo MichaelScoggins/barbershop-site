@@ -1,0 +1,181 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.grid-container {
+    display: grid;    
+}
+
+.div-container {    
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 2fr 2fr 10fr 3fr 1fr;
+    grid-gap: 1% 2%;
+    grid-template-areas: 
+    "header-container header-container header-container"
+    "nav nav nav"
+    "main-container main-container main-container"
+    "section-container section-container section-container"
+    "footer-container footer-container footer-container";
+}
+
+.header-container, .main-container, .section-container, .footer-container {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+
+    /* width: 50%; */
+}
+
+.header-container {
+    grid-area: header-container;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav  {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 17px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    grid-area: nav;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+#home {
+    color: #0BA39C
+}
+
+.nav a:link {
+    text-decoration: none;
+    color: black
+  }
+
+.nav a:hover, a:active {
+    color: #0BA39C
+}
+
+
+.main-container {
+    grid-area: main-container;
+    background-image: url(/images/mustacchio\ background.jpg);
+    background-size: 100% 100%;
+    /* background-repeat: no-repeat; */
+    border-image-repeat: stretch;
+
+}
+
+.beacon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-clip: border-box; */
+    /* left: 50%; */
+    text-align: left;
+    margin-left: 380px;
+    /* position: relative; */
+    line-height: 50px; 
+}
+
+.beacon > div span {
+    display: flex;
+    background: black;
+    color: white;
+    font-family: "Arial Black", Gadget, serif;
+    font-size: 21px;
+    margin: 7px 0;
+    text-align: left;
+    padding: 12px 14px 12px 14px;
+    line-height: 20px;
+    width: 44%;
+
+}
+
+.button {
+    background-color: #0BA39C;
+    border: none;
+    color: white;
+    height: 43px;
+    padding: 1px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+h2 {
+    font-family: 'Poller One', cursive;
+    font-size: 26px;
+    background: white;
+    /* background-clip: border-box; */
+
+}
+
+.section-container {
+    grid-area: section-container;
+}
+
+.portrait-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#father, #actor, #nerd {
+    margin: 5px 10px;
+}
+
+.footer-container {
+    grid-area: footer-container;
+    background-color: #252525;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Poller One', cursive;
+    font-size: 20px;
+}
+
+@media (max-width: 972px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header-container header-container header-container"
+        "nav nav nav"
+        "main-container main-container main-container"
+        "section-container section-container section-container"
+        "footer-container footer-container footer-container";
+    }
+}
+
+
+@media (max-width: 576px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "header-container"
+        "nav"
+        "main-container"
+        "section-container"
+        "footer-container"
+    }
+}
