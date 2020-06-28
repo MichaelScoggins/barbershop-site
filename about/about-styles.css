@@ -1,0 +1,383 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    width: 75%;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding-top: 40px;
+    margin: auto;
+}
+
+.header-container {
+    grid-area: header-container;
+    justify-content: center;
+}
+
+.hamburger {
+    grid-area: hamburger;
+    display: none;
+}
+
+.nav  {
+    grid-area: nav;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 13px;
+    padding-top: 40px;
+    padding-left: 250px;
+    padding-right: 250px;
+    text-align: center;
+}
+
+#home, #about, #blogs, #contact, #gallery {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#about {
+    color: #0BA39C
+}
+
+.nav a:link {
+    text-decoration: none;
+    color: black
+  }
+
+.nav a:hover, a:active {
+    color: #0BA39C
+}
+
+.about-header {
+    grid-area: about-header;
+    background: black;
+    color: white;
+    font-family: 'Poller One', cursive;
+    font-size: 31px;
+    text-align: center;
+    line-height: 50px;
+    width: 490px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+
+#author {
+    grid-area: author;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-color: black;
+    margin: auto;
+}
+
+.header-container {
+    grid-area: header-container;
+    justify-content: center;
+}
+
+h2, .p-content {
+    text-align: center;
+    margin: auto;
+    width: 550px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+}
+
+.p-content {
+    grid-area: p-content;
+    margin-top: 7px;
+    line-height: 20px;
+    font-size: 14px;
+
+}
+
+.about-content {
+    grid-area: about-content;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.one, .two, .three .four {
+    margin-top: 20px;
+    display: block;
+}
+
+.footer-container {
+    grid-area: footer-container;
+    height: 80px;
+    background-color: #252525;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.copywrite { 
+    grid-area: copywrite;
+    display: flex;
+    color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-right: 200px;
+}
+
+.contactlogos {
+    grid-area: contactlogos;
+    font-size: 40px;
+    color: white;
+    text-align: right;
+    margin: auto;
+}
+
+.contactlogos a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    grid-area: footer;
+    margin: auto;
+    display: flex;
+}
+
+
+@media (max-width: 972px) {
+    .nav  {
+        grid-area: nav;
+        font-family: "Arial Black", Gadget, sans-serif;
+        font-size: 13px;
+        padding-top: 20px;
+        padding-left: 130px;
+        padding-right: 130px;
+        text-align: center;
+    }
+    
+    #home, #about, #blogs, #contact, #gallery {
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    #author {
+        all: initial;
+        grid-area: author;
+        border: 2px solid black;
+        border-color: black;
+        width: 95%;
+    }
+
+    .footer-container {
+        /* all: initial; */
+        display: flex;
+        align-items: center;
+        align-content: center;
+        grid-area: footer-container;
+        height: 50px;
+        background-color: #252525;
+        /* margin: auto; */
+        margin-top: 25px;
+        margin-bottom: 25px;
+        text-align: center;
+        width: 95%;
+    }
+    
+}
+
+
+@media (max-width: 576px) {
+    html {
+        all: initial;
+    }
+    
+    .logo {
+        display: none;
+    }
+
+    body {
+        height: 95vh;
+        width: 95vw;
+        width: 98%;
+        margin: auto;
+    }
+
+    main {
+        all: initial;
+        width: 98%;
+        margin: auto;
+        margin-left: 30px;
+    }
+
+    .header-container {
+        all: initial;
+        grid-area: header-container;
+    }
+
+    #author {
+        all: initial;
+        grid-area: author;
+        border: 2px solid black;
+        border-color: black;
+        width: 95%;
+    }
+
+    .about-header {
+        grid-area: about-header;
+        background: black;
+        color: white;
+        font-family: 'Poller One', cursive;
+        font-size: 18px;
+        text-align: center;
+        line-height: 35px;
+        width: 98%;
+        /* margin: auto; */
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    
+
+    .hamburger-logo {
+        all: initial;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* justify-items: center; */
+        /* align-items: center; */
+        /* align-self: center; */
+        padding-top: 10px;
+        padding-bottom: 15px;
+        /* margin: auto; */
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        overflow: hidden;
+        /* background-color: #333; */
+        position: relative;
+    }
+    
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .hamburger #myLinks {
+        display: none;
+    }
+    
+    /* Style navigation menu links */
+    .hamburger a {
+        color: black;
+        font-family: 'Poller One', cursive;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    /* Style the hamburger menu */
+    .hamburger a.icon {
+        background: #0BA39C;
+        display: flex;
+        justify-content: center;
+        width: 10px;
+        margin: auto;
+    }
+    
+    /* Add a grey background color on mouse-over */
+    /* .hamburger a:hover {
+        background-color: #0BA39C;
+        color: black;
+    } */
+    
+    /* Style the active link (or home/logo) */
+    .active {
+        /* background-color: #4CAF50; */
+        color: black;
+    }
+    
+    h2, .p-content {
+        text-align: center;
+        /* margin: auto; */
+        width: 320px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    
+    }
+    
+    .p-content {
+        grid-area: p-content;
+        margin-top: 7px;
+        line-height: 20px;
+        font-size: 14px;
+    
+    }
+    
+    .about-content {
+        grid-area: about-content;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    
+    }
+    
+    .one, .two, .three .four {
+        margin-top: 15px;
+        display: block;
+    }
+    
+    .footer-container {
+        /* all: initial; */
+        display: flex;
+        align-items: center;
+        align-content: center;
+        grid-area: footer-container;
+        height: 50px;
+        background-color: #252525;
+        /* margin: auto; */
+        margin-top: 25px;
+        margin-bottom: 25px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .copywrite { 
+        all: initial;
+        grid-area: copywrite;
+        display: flex;
+        color: white;
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        align-self: center;
+    }
+    
+    .contactlogos {
+        grid-area: contactlogos;
+        font-size: 30px;
+        color: white;
+        text-align: right;
+    }
+    
+    .contactlogos a:visited {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .footer {
+        grid-area: footer;
+        /* margin: auto; */
+        /* display: flex; */
+    }
+    
+}
