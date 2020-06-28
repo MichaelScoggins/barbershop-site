@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2aa40c98be.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/gallery/gallery-styles.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="logo">
+            <img src="/images/logo.jpg" alt="logo">
+        </div>
+        <div class="hamburger">
+            <a class="active">
+                <div class="hamburger-logo">
+                    <img src="/images/logo.jpg" alt="logo">
+                </div>
+            </a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="/index.html">HOME</a>
+                <a href="/about/about.html">ABOUT</a>
+                <a>GALLERY</a>
+                <a href="/blogs/blogs.html">BLOGS</a>
+                <a href="/contact/contact.html">CONTACT</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <nav class="nav">
+            <a id="home" href="/index.html">HOME</a> 
+            <a id="about" href="/about/about.html">ABOUT</a> 
+            <a id="gallery">GALLERY</a> 
+            <a id="blogs"href="/blogs/blogs.html">BLOGS</a> 
+            <a id="contact" href="/contact/contact.html">CONTACT</a>
+        </nav>          
+    </header>
+    <div>
+        <h1 class="gallery-header">
+            GALLERY
+        </h1>
+    </div>
+    <main class="gallery-container">
+            <ul class="gallery">
+                <li>
+                    <a href="#">
+                        <img class="gal-img overlay" src="/images/gallery/mustache1.jpg" alt="the broom">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="gal-img overlay" src="/images/gallery/mustache2.jpg" alt="the timberlake">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="gal-img overlay" src="/images/gallery/mustache3.jpg" alt="the snakecharmer">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="gal-img overlay" src="/images/gallery/mustache4.jpg" alt="the tickler">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="gal-img overlay" src="/images/gallery/mustache5.jpg" alt="the danny trejo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="gal-img overlay" src="/images/gallery/mustache6.jpg" alt="the father">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="gal-img overlay" src="/images/gallery/mustache7.jpg" alt="the handlebar">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="gal-img overlay" src="/images/gallery/mustache8.jpg" alt="the outlaw">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="gal-img overlay" src="/images/gallery/mustache9.jpg" alt="the broom">
+                    </a>
+                </li>                
+            </ul>
+    </main>
+    <footer class="footer-container">
+        <div class="footer">
+            <p class="copywrite">
+                © 2023 by Mustacchio. All rights reserved.
+            </p>
+                <ul class="contactlogos">
+                <a href="#"> <li class="fab fa-twitter-square"></li></a>
+                <a href="#"> <li class="fab fa-facebook"></li></a>
+                <a href="#"> <li class="fab fa-google-plus-square"></li></a>
+                <a href="#"> <li class="fab fa-pinterest"></li></a>
+            </ul>
+        </div>
+    </footer>
+<script src="/gallery/scripts.js"></script>
+</body>
+</html>
