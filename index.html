@@ -3,14 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2aa40c98be.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
     <title>Mustache Enthusiast</title>
 </head>
-<body class="grid-container div-container">
-        <header class="grid-container header-container">
+<body>
+        <header class="header-container">
             <div class="logo">
                 <img src="/images/logo.jpg" alt="logo">
+            </div>
+            <div class="hamburger">
+                <a class="active">
+                    <div class="hamburger-logo">
+                        <img src="/images/logo.jpg" alt="logo">
+                    </div>
+                </a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <a href="/index.html">HOME</a>
+                    <a href="/about/about.html">ABOUT</a>
+                    <a>GALLERY</a>
+                    <a href="/blogs/blogs.html">BLOGS</a>
+                    <a href="/contact/contact.html">CONTACT</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>            
         </header>
         <nav class="nav">
@@ -20,7 +41,7 @@
             <a id="blogs"href="/blogs/blogs.html">BLOGS</a> 
             <a id="contact" href="/contact/contact.html">CONTACT</a>
         </nav>
-        <main class="grid-container main-container">
+        <main class="main-container">
             <section class="beacon">
                 <div>
                     <h2>THE BEACON TO ALL MANKIND</h2>                
@@ -33,23 +54,21 @@
                 </div>
             </section>
         </main>
-        <section class="grid-container section-container">
-            <div class="portrait-container">
+        <section class="portrait-container">
                 <div class="father-container">
-                    <a href="#"><img id="father" href="#" src="/images/the-father.jpg" alt="the father"></a>
+                    <a href="#"><img id="father" class="img overlay" href="#" src="/images/the-father.jpg" alt="the father"></a>
                     <h3>THE FATHER</h3>
                 </div>
                 <div class="actor-container">
-                    <a href="#"><img id="actor" href="#" src="/images/the-actor.jpg" alt="the actor"></a>
+                    <a href="#"><img id="actor" class="img overlay" href="#" src="/images/the-actor.jpg" alt="the actor"></a>
                     <h3>THE ACTOR</h3>
                 </div>
                 <div class=nerd-container>
-                    <a href="#"><img id="nerd" src="/images/the-nerd.jpg" alt="the nerd"></a>
+                    <a href="#"><img id="nerd" class="img overlay" src="/images/the-nerd.jpg" alt="the nerd"></a>
                     <h3>THE NERD</h3>
-                </div>   
-            </div>
+                </div>
         </section>
-        <footer class="grid-container footer-container">
+        <footer class="footer-container">
             <div class="footer">
                 <p class="copywrite">
                     © 2023 by Mustacchio. All rights reserved.

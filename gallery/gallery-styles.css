@@ -96,11 +96,6 @@ main {
     opacity: 1; 
 }
 
-.header-container {
-    grid-area: header-container;
-    justify-content: center;
-}
-
 .footer-container {
     grid-area: footer-container;
     height: 80px;

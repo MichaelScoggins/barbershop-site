@@ -1,55 +1,39 @@
-body {
-    height: 100vh;
-    width: 100vw;
-}
-
-.grid-container {
-    display: grid;    
-}
-
-.div-container {    
-    grid-template-columns: 2fr 1fr 2fr;
-    grid-template-rows: 2fr 2fr 10fr 3fr 1fr;
-    grid-gap: 1% 2%;
-    grid-template-areas: 
-    "header-container header-container header-container"
-    "nav nav nav"
-    "main-container main-container main-container"
-    "section-container section-container section-container"
-    "footer-container footer-container footer-container";
-}
-
-.header-container, .main-container, .section-container, .footer-container {
-    width: 100%;
-    height: 100%;
+main {
+    /* width: 75%; */
+    margin: auto;
 }
 
 .logo {
     display: flex;
+    justify-content: center;
     align-items: center;
+    align-self: center;
     padding-top: 40px;
-
-    /* width: 50%; */
+    margin: auto;
 }
 
 .header-container {
-    grid-area: header-container;
-    display: flex;
-    align-items: center;
     justify-content: center;
 }
 
+.hamburger {
+    display: none;
+}
+
 .nav  {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 17px;
-    padding-top: 40px;
-    padding-bottom: 30px;
     grid-area: nav;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 18px;
+    padding-top: 40px;
     padding-left: 250px;
     padding-right: 250px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#home, #about, #blogs, #contact, #gallery {
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 #home {
@@ -65,13 +49,26 @@ body {
     color: #0BA39C
 }
 
-
 .main-container {
     grid-area: main-container;
+    width: auto;
+    height: 500px;
+    
+    /* new */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* background-position: cover; */
+    margin: auto;
+
+
     background-image: url(/images/mustacchio\ background.jpg);
     background-size: 100% 100%;
-    /* background-repeat: no-repeat; */
-    border-image-repeat: stretch;
+
+
+    background-repeat: no-repeat; 
+
+    
+    /* border-image-repeat: stretch; */
 
 }
 
@@ -125,11 +122,23 @@ h2 {
 
 }
 
+.overlay {
+    opacity: .7;
+    transition: .5s ease;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.img:hover {
+    opacity: 1; 
+}
+
 .section-container {
     grid-area: section-container;
 }
 
 .portrait-container {
+    /* width: 960px; */
+    margin: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -137,12 +146,8 @@ h2 {
 }
 
 #father, #actor, #nerd {
-    margin: 5px 10px;
-}
-
-.footer-container {
-    grid-area: footer-container;
-    background-color: #252525;
+    margin: 10px 20px;
+    /* width: 80%; */
 }
 
 h3 {
@@ -151,17 +156,209 @@ h3 {
     font-size: 20px;
 }
 
+.footer-container {
+    grid-area: footer-container;
+    height: 80px;
+    background-color: #252525;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.copywrite { 
+    grid-area: copywrite;
+    display: flex;
+    color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-right: 200px;
+}
+
+.contactlogos {
+    grid-area: contactlogos;
+    font-size: 40px;
+    color: white;
+    text-align: right;
+    margin: auto;
+}
+
+.contactlogos a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.contactlogos a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    grid-area: footer;
+    margin: auto;
+    display: flex;
+}
+
+
 @media (max-width: 972px) {
-    .div-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "header-container header-container header-container"
-        "nav nav nav"
-        "main-container main-container main-container"
-        "section-container section-container section-container"
-        "footer-container footer-container footer-container";
+    body {
+        /* height: 100vh; */
+        /* width: 100vw; */
+    }
+    .nav  {
+        grid-area: nav;
+        font-family: "Arial Black", Gadget, sans-serif;
+        font-size: 13px;
+        padding-top: 20px;
+        padding-left: 120px;
+        padding-right: 120px;
+        text-align: center;
+    }
+    
+    #home, #about, #blogs, #contact, #gallery {
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    main {
+        margin: auto;
+    }
+
+    .main-container {
+        /* all: initial; */
+        grid-area: main-container;
+        width: auto;
+        height: 300px;
+        
+        /* new */
+        /* width: 100%; */
+        /* height: 100%; */
+        /* background-position: cover; */
+        margin: auto;
+    
+    
+        background-image: url(/images/mustacchio\ background.jpg);
+        background-size: 100% 100%;
+    
+    
+        background-repeat: no-repeat; 
+        margin: auto;
+    
+        
+        /* border-image-repeat: stretch; */
+    
+    }
+
+    .beacon {
+        all: initial;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        /* background-clip: border-box; */
+        /* left: 50%; */
+        text-align: left;
+        margin-left: 380px;
+        margin-top: 40px;
+        padding-top: 20px;
+        /* position: relative; */
+        line-height: 15px; 
+    }
+    
+    .beacon > div span {
+        all: initial;
+        display: flex;
+        background: black;
+        color: white;
+        font-family: "Arial Black", Gadget, serif;
+        font-size: 15px;
+        margin: 7px 0;
+        text-align: left;
+        padding: 9px 11px 9px 11px;
+        line-height: 10px;
+        width: 44%;
+    
+    }
+    
+    .button {
+        all: initial;
+        background-color: #0BA39C;
+        border: none;
+        color: white;
+        height: 33px;
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+        /* display: inline-block; */
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        margin: 4px 2px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+    
+    h2 {
+        all: initial;
+        font-family: 'Poller One', cursive;
+        /* line-height: 15px; */
+        font-size: 20px;
+        background: white;
+        /* background-clip: border-box; */    
+    }
+
+    .portrait-container {
+        /* width: 960px; */
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #father, #actor, #nerd {
+        margin: 10px 20px;
+        width: 90%;
+    }
+    
+    h3 {
+        text-align: center;
+        font-family: 'Poller One', cursive;
+        font-size: 18px;
+    }
+    
+    .copywrite { 
+        grid-area: copywrite;
+        display: flex;
+        color: white;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        /* margin-right: 200px; */
+    }
+    
+    .contactlogos {
+        grid-area: contactlogos;
+        font-size: 40px;
+        color: white;
+        text-align: right;
+        margin: auto;
+    }   
+
+    .footer {
+        margin: auto;
+        display: flex;
+    }
+    
+    .footer-container {
+        grid-area: footer-container;
+        height: 80px;
+        background-color: #252525;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        /* display: flex; */
     }
 }
 
@@ -188,36 +385,216 @@ h3 {
         display: none;
     }
 
+    .logo {
+        display: none;
+    }
+
+    body {
+        height: 95vh;
+        width: 95vw;
+    }
+
+    .header-container {
+        all: initial;
+        grid-area: header-container;
+    }
+
+    .hamburger-logo {
+        all: initial;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        overflow: hidden;
+        /* background-color: #333; */
+        position: relative;
+    }
+    
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .hamburger #myLinks {
+        display: none;
+    }
+    
+    /* Style navigation menu links */
+    .hamburger a {
+        color: black;
+        font-family: 'Poller One', cursive;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    /* Style the hamburger menu */
+    .hamburger a.icon {
+        background: #0BA39C;
+        display: flex;
+        justify-content: center;
+        width: 10px;
+        margin: auto;
+    }
+    
+    /* Add a grey background color on mouse-over */
+    /* .hamburger a:hover {
+        background-color: #0BA39C;
+        color: black;
+    } */
+    
+    /* Style the active link (or home/logo) */
+    .active {
+        /* background-color: #4CAF50; */
+        color: black;
+    }
+
+    main {
+        margin: auto;
+    }
+
     .main-container {
-        background-image: none;
-        /* display: none; */
+        /* all: initial; */
+        grid-area: main-container;
+        width: 100%;
+        height: 250px;
+        
+        /* new */
+        /* width: 100%; */
+        /* height: 100%; */
+        /* background-position: cover; */
+        margin: auto;
+    
+    
+        background-image: url(/images/mustacchio\ background.jpg);
+        background-size: 100% 100%;
+    
+    
+        background-repeat: no-repeat; 
+        margin: auto;
+    
+        
+        /* border-image-repeat: stretch; */
+    
     }
 
     .beacon {
-        display: none;
-        align-items: center;
-        justify-content: center;
-        /* background-clip: border-box; */
-        /* left: 50%; */
+        all: initial;
+        display: flex;
+        justify-content: right;
         text-align: left;
-        margin-left: 380px;
+        margin-left: 150px;
+        margin-top: 40px;
+        padding-top: 20px;
         /* position: relative; */
-        line-height: 50px; 
+        line-height: 10px; 
     }
     
     .beacon > div span {
+        all: initial;
         display: flex;
+        justify-content: flex-end;
         background: black;
         color: white;
         font-family: "Arial Black", Gadget, serif;
-        font-size: 21px;
-        margin: 7px 0;
-        text-align: left;
-        padding: 12px 14px 12px 14px;
-        line-height: 20px;
-        width: 44%;
+        font-size: 15px;
+        margin: 7px 0px;
+        text-align: right;
+        padding: 9px 11px 9px 11px;
+        line-height: 10px;
+        width: 70%;
     
+    }
+    
+    .button {
+        all: initial;
+        background-color: #0BA39C;
+        border: none;
+        color: white;
+        height: 33px;
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+        /* display: inline-block; */
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        margin: 4px 2px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+    
+    h2 {
+        all: initial;
+        font-family: 'Poller One', cursive;
+        /* line-height: 15px; */
+        font-size: 15px;
+        background: white;
+        /* background-clip: border-box; */    
     }
 
-    
+    .portrait-container {
+        /* width: 960px; */
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
+    
+    #father, #actor, #nerd {
+        margin: 10px 20px;
+        width: 90%;
+    }
+    
+    h3 {
+        text-align: center;
+        font-family: 'Poller One', cursive;
+        font-size: 13px;
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        grid-area: footer-container;
+        height: 50px;
+        background-color: #252525;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .copywrite { 
+        all: initial;
+        grid-area: copywrite;
+        display: flex;
+        color: white;
+        font-size: 7px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        align-self: center;
+    }
+    
+    .contactlogos {
+        grid-area: contactlogos;
+        font-size: 30px;
+        color: white;
+        text-align: right;
+    }
+    
+    .contactlogos a:visited {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .footer {
+        grid-area: footer;
+    }
+    
+}
