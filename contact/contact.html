@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2aa40c98be.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/contact/contact-styles.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="logo">
+            <img src="/images/logo.jpg" alt="logo">
+        </div>
+        <div class="hamburger">
+            <a class="active">
+                <div class="hamburger-logo">
+                    <img src="/images/logo.jpg" alt="logo">
+                </div>
+            </a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="/index.html">HOME</a>
+                <a href="/about/about.html">ABOUT</a>
+                <a href="/gallery/gallery.html">GALLERY</a>
+                <a href="/blogs/blogs.html">BLOGS</a>
+                <a>CONTACT</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <nav class="nav">
+            <a id="home" href="/index.html">HOME</a> 
+            <a id="about" href="/about/about.html">ABOUT</a> 
+            <a id="gallery" href="/gallery/gallery.html">GALLERY</a> 
+            <a id="blogs" href="/blogs/blogs.html">BLOGS</a> 
+            <a id="contact">CONTACT</a>
+        </nav>          
+    </header>
+    <div>
+        <h1 class="forms-header">
+            LET'S KEEP IN TOUCH
+        </h1>
+    </div>
+    <main class="forms-container">
+        <form class="form" action="results.html" method="GET" enctype="multipart/form-data">
+            <div>
+              <label for="name"></label>
+              <input type="text" name="name" placeholder="NAME" id="name">
+            </div>
+            <div>
+                <label for="address"></label>
+                <input type="text" name="address" placeholder="ADDRESS" id="address">            
+            </div>
+            <div>
+                <label for="email"></label>
+                <input type="email" name="email" placeholder="EMAIL" id="email"></div>
+            <div>
+                <label for="phone"></label>
+                <input type="tel" name="phone" placeholder="PHONE" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required maxlength="10">
+            </div>
+            <div>
+              <label for="comments"><br></label>
+              <textarea id="comments" name="comments" placeholder="MESSAGE"></textarea>
+            </div>
+            <button class="button" type="submit">SEND</button>
+        </form>
+    </main>
+    <footer class="footer-container">
+        <div class="footer">
+            <p class="copywrite">
+                © 2023 by Mustacchio. All rights reserved.
+            </p>
+                <ul class="contactlogos">
+                <a href="#"> <li class="fab fa-twitter-square"></li></a>
+                <a href="#"> <li class="fab fa-facebook"></li></a>
+                <a href="#"> <li class="fab fa-google-plus-square"></li></a>
+                <a href="#"> <li class="fab fa-pinterest"></li></a>
+            </ul>
+        </div>
+    </footer>
+<script src="/gallery/scripts.js"></script>
+</body>
+</html>

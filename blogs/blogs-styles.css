@@ -277,26 +277,20 @@ main {
         font-family: "arial black", gadget, sans-serif;
         font-size: 20px;
         color: #252525;
-        /* text-align: center; */
-        /* margin-top: 35px; */
         margin: auto;
+        margin-top: 10px;
         padding-bottom: 22px;
-        /* margin-left: 45px; */
-        /* margin-left: auto; */
     
     }
     
     .blog-content {
         text-align: center;
         line-height: 18px;
-        /* padding: 0px 30px 12px; */
         font-family: Arial, Helvetica, sans-serif;
         color: #252525;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 550;
         padding-bottom: 16px;
-        /* margin-left: 95px; */
-        /* margin-left: auto; */
         margin: auto;
         width: 300px;
     }
@@ -312,8 +306,6 @@ main {
         font-family: "arial-black", gadget, sans-serif;
         font-weight: 800;
         margin-left: 150px;
-        /* margin-bottom: 0; */
-        /* margin: auto; */
         margin-left: 180px;
         cursor: pointer;
       }
@@ -326,7 +318,6 @@ main {
     
     .blogs-container {
         margin: auto;
-        /* width: 80%; */
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -562,15 +553,6 @@ main {
         /* width: 80%; */
         display: flex;
         flex-wrap: wrap;
-        /* display: grid; */
-        /* grid-template-columns: 35% 65%; */
-        /* grid-template-rows: 1fr 1fr 1fr; */
-        /* grid-template-areas:  */
-        /* "blog1con blog1con" */
-        /* "blog2con blog2con" */
-        /* "blog3con blog3con"; */
-        /* grid-row-gap: 9px; */
-        /* width: 550px; */
     }
     
     .gal-img1 {
