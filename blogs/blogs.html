@@ -1,110 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/2aa40c98be.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/blogs/blogs-styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/2aa40c98be.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/blogs/blogs-styles.css" />
     <title>Blogs</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header-container">
-        <div class="logo">
-            <img src="/images/logo.jpg" alt="logo">
+      <div class="logo">
+        <img src="/images/logo.jpg" alt="logo" />
+      </div>
+      <div class="hamburger">
+        <a class="active">
+          <div class="hamburger-logo">
+            <img src="/images/logo.jpg" alt="logo" />
+          </div>
+        </a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="/index.html">HOME</a>
+          <a href="/about/about.html">ABOUT</a>
+          <a href="/gallery/gallery.html">GALLERY</a>
+          <a>BLOGS</a>
+          <a href="/contact/contact.html">CONTACT</a>
         </div>
-        <div class="hamburger">
-            <a class="active">
-                <div class="hamburger-logo">
-                    <img src="/images/logo.jpg" alt="logo">
-                </div>
-            </a>
-            <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
-                <a href="/index.html">HOME</a>
-                <a href="/about/about.html">ABOUT</a>
-                <a href="/gallery/gallery.html">GALLERY</a>
-                <a>BLOGS</a>
-                <a href="/contact/contact.html">CONTACT</a>
-            </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-        <nav class="nav">
-            <a id="home" href="/index.html">HOME</a> 
-            <a id="about" href="/about/about.html">ABOUT</a> 
-            <a id="gallery" href="/gallery/gallery.html">GALLERY</a> 
-            <a id="blogs">BLOGS</a> 
-            <a id="contact" href="/contact/contact.html">CONTACT</a>
-        </nav>          
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <nav class="nav">
+        <a id="home" href="/index.html">HOME</a>
+        <a id="about" href="/about/about.html">ABOUT</a>
+        <a id="gallery" href="/gallery/gallery.html">GALLERY</a>
+        <a id="blogs">BLOGS</a>
+        <a id="contact" href="/contact/contact.html">CONTACT</a>
+      </nav>
     </header>
     <div>
-        <h1 class="blogs-header">
-            BLOG
-        </h1>
+      <h1 class="blogs-header">BLOG</h1>
     </div>
     <main class="blogs-container">
-        <!-- <div class="blogs-container"> -->
-            <article class="blog1-container">
-                <a href="#">
-                    <img class="gal-img1 overlay" src="/images/blog/cutting-mustache.jpg" alt="the process">
-                </a>
-                <section class="blog1">
-                    <h1 class="blogheaders">
-                        WHY I GREW A MUSTACHE
-                    </h1>
-                    <p class="blog-content">
-                        This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text.
-                    </p>
-                    <a href="#" class="button">READ THIS</a>
-                </section>
-            </article>
-            <article class="blog2-container">
-                <a href="#">
-                    <img class="gal-img2 overlay" src="/images/blog/in-the-country.jpg" alt="the outdoorsman">
-                </a>
-                <section class="blog2">
-                    <h1 class="blogheaders">
-                        IN THE COUNTRY
-                    </h1>
-                    <p class="blog-content">
-                        Want an easier solution for a Free Website? Head straight to Wix and immediately start customizing your website!
-                    </p>                    
-                    <a href="#" class="button">READ THIS</a>
-                </section>
-            </article>
-            <article class="blog3-container">
-                <a href="#">
-                    <img class="gal-img3 overlay" src="/images/blog/mustache-brothers.jpg" alt="the stache bros">
-                </a>
-                <section class="blog3">
-                    <h1 class="blogheaders">
-                        THE MUSTACHE BROTHERS
-                    </h1>
-                    <p class="blog-content">
-                        Wix is an online website builder with a simple drag & drop interface, meaning you do the work online and instantly publish to the web. Nothing to download, nothing to upload.
-                    </p>
-                    <a href="#" class="button">READ THIS</a>
-                </section>
-            </article>
-        <!-- </div> -->
+      <!-- <div class="blogs-container"> -->
+      <article class="blog1-container">
+        <a href="#">
+          <img
+            class="gal-img1 overlay"
+            src="/images/blog/cutting-mustache.jpg"
+            alt="the process"
+          />
+        </a>
+        <section class="blog1">
+          <h1 class="blogheaders">WHY I GREW A MUSTACHE</h1>
+          <p class="blog-content">
+            Mollit amet deserunt non aliquip duis consequat fugiat voluptate
+            elit eu nostrud. Velit eiusmod ut ut mollit nostrud qui laborum
+            consequat quis. Do dolore velit elit commodo anim enim ex non mollit
+            proident tempor laboris ut amet. Cillum duis adipisicing et officia
+            est ut ullamco anim consequat et consequat amet do deserunt. Sit
+            aute sit exercitation voluptate cillum eiusmod.
+          </p>
+          <a href="#" class="button">READ THIS</a>
+        </section>
+      </article>
+      <article class="blog2-container">
+        <a href="#">
+          <img
+            class="gal-img2 overlay"
+            src="/images/blog/in-the-country.jpg"
+            alt="the outdoorsman"
+          />
+        </a>
+        <section class="blog2">
+          <h1 class="blogheaders">IN THE COUNTRY</h1>
+          <p class="blog-content">
+            Ea ut labore occaecat quis do laboris nulla ea irure sint est
+            occaecat. Minim nostrud magna deserunt culpa deserunt. Labore
+            laboris voluptate velit nisi laboris reprehenderit consectetur velit
+            velit ad sunt laboris. Do non tempor anim Lorem nisi quis. Nostrud
+            voluptate Lorem cillum elit eu exercitation ad. Amet esse
+            reprehenderit enim fugiat dolore sit duis ad.
+          </p>
+          <a href="#" class="button">READ THIS</a>
+        </section>
+      </article>
+      <article class="blog3-container">
+        <a href="#">
+          <img
+            class="gal-img3 overlay"
+            src="/images/blog/mustache-brothers.jpg"
+            alt="the stache bros"
+          />
+        </a>
+        <section class="blog3">
+          <h1 class="blogheaders">THE MUSTACHE BROTHERS</h1>
+          <p class="blog-content">
+            Dolore velit labore consectetur adipisicing ex. Aliquip commodo do
+            nisi laboris laborum veniam consectetur nisi veniam. Labore laboris
+            enim fugiat sint irure amet sunt amet reprehenderit cillum Lorem
+            tempor excepteur magna. Ullamco labore nulla incididunt proident
+            dolore cupidatat anim. Tempor culpa in nulla sit ex eiusmod
+            cupidatat dolore ullamco excepteur veniam tempor quis.
+          </p>
+          <a href="#" class="button">READ THIS</a>
+        </section>
+      </article>
+      <!-- </div> -->
     </main>
     <footer class="footer-container">
-        <div class="footer">
-            <p class="copywrite">
-                © 2023 by Mustacchio. All rights reserved.
-            </p>
-                <ul class="contactlogos">
-                <a href="#"> <li class="fab fa-twitter-square"></li></a>
-                <a href="#"> <li class="fab fa-facebook"></li></a>
-                <a href="#"> <li class="fab fa-google-plus-square"></li></a>
-                <a href="#"> <li class="fab fa-pinterest"></li></a>
-            </ul>
-        </div>
+      <div class="footer">
+        <p class="copywrite">© 2023 by Mustacchio. All rights reserved.</p>
+        <ul class="contactlogos">
+          <a href="#"> <li class="fab fa-twitter-square"></li></a>
+          <a href="#"> <li class="fab fa-facebook"></li></a>
+          <a href="#"> <li class="fab fa-google-plus-square"></li></a>
+          <a href="#"> <li class="fab fa-pinterest"></li></a>
+        </ul>
+      </div>
     </footer>
-<script src="/gallery/scripts.js"></script>
-</body>
+    <script src="/gallery/scripts.js"></script>
+  </body>
 </html>
